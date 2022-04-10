@@ -34,19 +34,19 @@ function RecipeCreate({ addRecipe }) {
         <tbody>
           <tr>
             <td>
-              <input id="name" name="name" type="text" placeholder="Name" onChange={handleChange} value={formData.name}/>
+              <input id="name" name="name" type="text" placeholder="Name" onChange={handleChange} value={formData.name} required/>
             </td>
             <td>
-              <input id="cuisine" name="cuisine" type="text" placeholder="Cuisine" onChange={handleChange} value={formData.cuisine}/>
+              <input id="cuisine" name="cuisine" type="text" placeholder="Cuisine" onChange={handleChange} value={formData.cuisine} required/>
             </td>
             <td>
-              <input id="Photo" name="photo" type="url" placeholder="URL" onChange={handleChange} value={formData.photo}/>
+              <input id="Photo" name="photo" type="url" placeholder="URL" onChange={handleChange} value={formData.photo} required/>
             </td>
             <td>
-              <textarea id="ingredients" name="ingredients" placeholder="Ingredients" rows="4" onChange={handleChange} value={formData.ingredients}/>
+              <textarea id="ingredients" name="ingredients" placeholder="Ingredients" rows="4" onChange={handleChange} value={formData.ingredients} required/>
             </td>
             <td>
-              <textarea id="preparation" name="preparation" placeholder="Preparation" rows="4" onChange={handleChange} value={formData.preparation}/>
+              <textarea id="preparation" name="preparation" placeholder="Preparation" rows="4" onChange={handleChange} value={formData.preparation} required/>
             </td>
             <td>
               <button type="submit">Create</button>
