@@ -1,8 +1,8 @@
 import React from "react";
 
-function RecipeItem({ name, cuisine, photo, ingredients, preparation, deleteRecipe }) {
+function RecipeItem({ key, name, cuisine, photo, ingredients, preparation, deleteRecipe }) {
     return (
-        <tr>
+        <tr key={key}>
             <td>{name}</td>
             <td>{cuisine}</td>
             <td><img src={photo} width="100%" height="100%"/></td>
