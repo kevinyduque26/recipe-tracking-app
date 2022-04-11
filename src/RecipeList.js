@@ -7,15 +7,16 @@ function RecipeList({ recipes, handleDeleteRecipe }) {
   // TODO: Create at least one additional component that is used by this component.
   // TODO: Each recipe row must have a delete button - <button name="delete">Delete</button> - that deletes the post when clicked
 
-  const list = recipes.map((recipe) => (
+  const list = recipes.map((recipe, index) => (
 
     <RecipeItem 
+      key={index}
       name={recipe.name} 
       cuisine={recipe.cuisine} 
       photo={recipe.photo} 
       ingredients={recipe.ingredients} 
       preparation={recipe.preparation} 
-      deleteRecipe={() => handleDeleteRecipe(recipe.name)} 
+      deleteRecipe={() => handleDeleteRecipe(index)} 
     />
 
   ))
