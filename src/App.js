@@ -15,9 +15,9 @@ function App() {
 
   console.log(recipes)
 
-  const handleDeleteRecipe = (name) =>
+  const handleDeleteRecipe = (indexToDelete) =>
     setRecipes((currentRecipes) => 
-      currentRecipes.filter((recipe) => recipe.name !== name)
+      currentRecipes.filter((recipe, index) => index !== indexToDelete)
     );
 
   return (
