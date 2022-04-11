@@ -15,10 +15,8 @@ header {
 
 h1 {
   font-size: 64px;
-  color: white;
   text-align: center;
   padding: 20px 0px;
-  background-color: #013AB1;
   border-style: solid;
   border-color: #f8f8f8;
 }
@@ -31,8 +29,6 @@ html {
 
 thead th, tfoot th {
   font-family: 'Rock Salt';
-  background-color: #013AB1;
-  color: white;
 }
 
 th {
@@ -60,7 +56,7 @@ table {
 }
 
 form {
-  background-color: #a6a6a6;
+  background-color: #ffaf7a;
 }
 
 .content_td p {
@@ -71,7 +67,7 @@ form {
 }
 
 div > table > tbody > tr:nth-child(odd) {
-  background-color: #f8f8f8;
+  background-color: #ffaf7a;
 }
 
 
